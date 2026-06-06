@@ -1,0 +1,43 @@
+{
+  "benchmark_date": "2024-05-20",
+  "dataset": "synthetic_cosine_1536dim",
+  "num_vectors": 1000000,
+  "results": {
+    "qdrant": {
+      "insert_throughput_per_sec": 8200,
+      "p50_query_ms": 5,
+      "p95_query_ms": 9,
+      "p99_query_ms": 12,
+      "recall_at_10": 0.987,
+      "index_size_gb": 6.2,
+      "monthly_cost_usd": 89
+    },
+    "pinecone": {
+      "insert_throughput_per_sec": 3100,
+      "p50_query_ms": 11,
+      "p95_query_ms": 15,
+      "p99_query_ms": 18,
+      "recall_at_10": 0.981,
+      "index_size_gb": 5.8,
+      "monthly_cost_usd": 210
+    },
+    "weaviate": {
+      "insert_throughput_per_sec": 4800,
+      "p50_query_ms": 14,
+      "p95_query_ms": 18,
+      "p99_query_ms": 21,
+      "recall_at_10": 0.974,
+      "index_size_gb": 7.1,
+      "monthly_cost_usd": 145
+    },
+    "chroma": {
+      "insert_throughput_per_sec": 1200,
+      "p50_query_ms": 28,
+      "p95_query_ms": 38,
+      "p99_query_ms": 45,
+      "recall_at_10": 0.961,
+      "index_size_gb": 5.9,
+      "monthly_cost_usd": 60
+    }
+  }
+}
