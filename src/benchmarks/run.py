@@ -1,4 +1,4 @@
-"""VecDB Benchmark runner"""
+
 import argparse, json, time
 from pathlib import Path
 import numpy as np
